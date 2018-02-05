@@ -1,5 +1,7 @@
 # Code Breaker for Tandy 100/102
 
+https://github.com/48kRAM/m100-codebreaker
+
 Entry in the 2018 BASIC 10-line game contest, in the `PUR80` category.
 
 Due to the severly limited space in the code, there are no in-game instructions. Please refer to this README instead.
