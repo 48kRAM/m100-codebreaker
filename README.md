@@ -53,3 +53,16 @@ Start `BASIC` and run:
 `LOAD "CODE.DO"`
 
 Type `RUN` to execute the program.
+
+## Code explanation
+
+ 1. Array 'C' holds secret code and the guess. Seed the random number generator. Generate the secret code.
+ 2. Game loop top. Clear input line and input player guess.
+ 3. Call subroutine at 8 to print player guess. 'P' sets the correct column position and 'O' prints the guess rather than the secret code. Begin iterating over code digit positions. Detect a fully-correct digit and jump to line 5 if found.
+ 4. (We get here if digit is not fully correct). Iterate over digits in guess and detect a partially correct digit. When a partially-correct digit is found, jump to line 9.
+ 5. Continue the outer iteration loop. When done, call subroutine at 6. Then, if the game has been won, jump to line 9. If the game has been lost, jump to line 10. Otherwise, jump to line 2 so player can guess again.
+ 6. The subroutine on lines 6 through 7 prints the results of the player's guess using Tandy glyphs. These glyphs don't display properly on other platforms. One filled glyph is printed for each fully-correct digit, and one unfilled glyph is printed for each partially-correct digit.
+ 7. Continuation of subroutine at line 6.
+ 8. Iterate over the 'C' array, printing either the secret code or the player guess, depending on the value of 'O'. Screen position is calculated based on the value of 'P'.
+ 9. This line either finishes the routine started at line 5, or tells the player that he/she has won. The code before the ELSE was moved here from line 5 so that it fit in 80 characters.
+ 10. Tell the player she/he has lost and print out the secret code.
