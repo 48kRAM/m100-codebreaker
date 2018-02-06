@@ -24,7 +24,7 @@ This game will work out of the box on a Tandy 100 or 102. Modifications are requ
 
 ## Entering your guess
 
-Enter you guess ass a series of comma-separated numbers. For example:
+Enter you guess as a series of comma-separated numbers. For example:
 
 `3,1,4,5`
 
