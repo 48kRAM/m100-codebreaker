@@ -68,3 +68,7 @@ Type `RUN` to execute the program.
  8. Iterate over the 'C' array, printing either the secret code or the player guess, depending on the value of 'O'. Screen position is calculated based on the value of 'P'.
  9. This line either finishes the routine started at line 5, or tells the player that he/she has won. The code before the ELSE was moved here from line 5 so that it fit in 80 characters.
  10. Tell the player she/he has lost and print out the secret code.
+ 
+ ## Special thanks
+ 
+ Thanks to Ken Pettit for the RNG seed routine. Thanks, also, to the M100 mailing list members for encouragement, as well as the years of support for all my Tandy endeavors. 
